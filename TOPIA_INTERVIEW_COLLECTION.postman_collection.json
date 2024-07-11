@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "318af2a0-1f7e-4a24-a62d-bee49b990e3e",
+		"name": "TOPIA_INTERVIEW_COLLECTION",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3657478"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/fx?targetCurrency=USD&date=2024-07-01",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fx?targetCurrency=USD&date=2024-07-01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fx"
+					],
+					"query": [
+						{
+							"key": "targetCurrency",
+							"value": "USD"
+						},
+						{
+							"key": "date",
+							"value": "2024-07-01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/fx?targetCurrency=USD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fx?targetCurrency=USD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fx"
+					],
+					"query": [
+						{
+							"key": "targetCurrency",
+							"value": "USD"
+						},
+						{
+							"key": "date",
+							"value": "2024-07-01",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Latest Exchange rate"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/fx/USD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fx/USD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fx",
+						"USD"
+					]
+				},
+				"description": "get top 3 records order by date"
+			},
+			"response": []
+		}
+	]
+}
