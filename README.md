@@ -6,3 +6,5 @@ dev environment is running on h2 db and prod environment is running on MySQL.</p
 Need to change profile in application.properties 
 <li>spring.profiles.active=dev</li>
 <li>spring.profiles.active=prod</li>
+<p>Once your application run you will be able to use postman collection to execute API's</p>
+<href>https://github.com/kaushikudavant44/TopiaForiegnExhangeRate/blob/main/TOPIA_INTERVIEW_COLLECTION.postman_collection.json</href>
